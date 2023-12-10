@@ -17,10 +17,13 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS serve
 WORKDIR /app
 COPY --from=build /app ./
 
+RUN ls -la /app
+
+#RUN chmod +x /app/nativeAot
+ENTRYPOINT ["./app/bin/Release/net8.0/linux-x64/publish/nativeAot"]
+
 EXPOSE 8080
 EXPOSE 8081
-
-ENTRYPOINT ["dotnet", "./bin/Release/net8.0/linux-x64/nativeAot"]
 
 #docker build -t native-aot:latest ./nativeAot
 #docker run -d -p 8080:8080 -p 8081:8081 native-aot
