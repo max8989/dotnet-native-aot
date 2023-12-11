@@ -1,5 +1,3 @@
-<h1 align="center" id="title">dotnet native aot demo</h1>
-
 <p align="center"><img src="https://socialify.git.ci/max8989/dotnet-native-aot/image?font=Inter&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Light" alt="dotnet-native-aot" width="640" height="320" /></p>
 
 <p id="description">This repository contains a demo project for benchmarking the .NET Native Ahead-of-Time (AOT) compilation. The project can be built and run using Docker or the .NET SDK directly.</p>
